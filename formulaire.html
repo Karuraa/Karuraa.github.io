@@ -42,8 +42,8 @@
 	<tr>
 		<td>Ma classe</td>	
 		<td>
-		<select>
-			<option>Choisir une classe</option>
+		<select name="classe" id="classe" required="option">
+			<option></option>
 			<option>BTS SIO </option>
 		</select>
 		</td>
@@ -56,7 +56,7 @@
 
 	<tr>
 		<td>Mon mot de passe</td>
-		<td><input type="password" name="t4" maxlength="20"  placeholder="20 caractères maximum" required="required"></td>
+		<td><input type="password" name="t4" maxlength="32" placeholder="20 caractères maximum" required="required"></td>
 	</tr>
 </table>
 </center>
@@ -77,9 +77,9 @@
 
 <tr>
 	<td>J'apporterai:     </td>
-	<td><input type="radio" name="r1">Une entrée</td>
-	<td><input type="radio" name="r2">Un plat</td>
-	<td><input type="radio" name="r3">un dessert</td>
+	<td><input type="radio" id="r1" name="r1">Une entrée</td>
+	<td><input type="radio" id="r2" name="r1">Un plat</td>
+	<td><input type="radio" id="r3" name="r1">un dessert</td>
 </tr>
 
 <tr>
@@ -89,7 +89,7 @@
 
 <tr>
 	<td colspan="4">
-		<textarea id="message" name="message" rows="5" cols="100" placeholder="Écrire ici..." ></textarea>
+		<textarea id="message" name="message" rows="5" cols="100" placeholder="Écrire ici... 500 caractères max" maxlength="500"></textarea>
 	</td>
 </tr>
 </table>
